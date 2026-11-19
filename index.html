@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammad Atash — Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0d1a15;--muted:#4d6b5e;--line:#dbe8e1;
+    --em:#0b6e4f;--em2:#3ddc97;--vi:#6a1b9a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:"Space Grotesk","Segoe UI",sans-serif;
+    background:#eef4f1;color:var(--ink);line-height:1.65;
+    padding:28px 16px 60px;
+  }
+  .page{
+    max-width:860px;margin:0 auto;background:#fff;border-radius:16px;
+    box-shadow:0 20px 60px -30px rgba(11,110,79,.35);
+    overflow:hidden;
+  }
+  .hero{
+    background:linear-gradient(115deg,#041b15,#0b6e4f 55%,#3a1266);
+    color:#fff;padding:38px 40px 30px;position:relative;overflow:hidden;
+  }
+  .hero:after{
+    content:"";position:absolute;right:-70px;top:-90px;width:300px;height:300px;
+    background:radial-gradient(circle,rgba(168,85,247,.45),transparent 65%);
+  }
+  .hero:before{
+    content:"";position:absolute;left:-60px;bottom:-120px;width:280px;height:280px;
+    background:radial-gradient(circle,rgba(61,220,151,.35),transparent 65%);
+  }
+  .hero h1{font-size:clamp(26px,5vw,38px);font-weight:700;letter-spacing:.3px;position:relative;z-index:1}
+  .hero .role{color:#b8f5db;font-size:clamp(12.5px,2.2vw,15px);letter-spacing:1.6px;text-transform:uppercase;margin-top:8px;position:relative;z-index:1}
+  .contact{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:20px;font-size:12.5px;position:relative;z-index:1}
+  .contact a{color:#eafff7;text-decoration:none;border-bottom:1px dashed rgba(255,255,255,.35)}
+  .contact a:hover{border-bottom-color:#fff}
+  .body{padding:32px 40px 40px}
+  section{margin-bottom:28px}
+  h2{
+    font-size:13px;letter-spacing:2.2px;text-transform:uppercase;color:var(--em);
+    border-bottom:2px solid var(--line);padding-bottom:8px;margin-bottom:14px;
+  }
+  p{font-size:14px;color:#22402f;margin-bottom:10px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 30px}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}}
+  .skill{margin-bottom:12px}
+  .skill .top{display:flex;justify-content:space-between;font-size:13px;margin-bottom:5px}
+  .skill .top b{font-weight:600}
+  .skill .top span{color:var(--em);font-weight:600}
+  .track{height:7px;background:#e6f0eb;border-radius:20px;overflow:hidden}
+  .track i{display:block;height:100%;border-radius:20px;background:linear-gradient(90deg,var(--em2),#7c5cff,var(--vi))}
+  ul{list-style:none}
+  li{font-size:13.5px;color:#22402f;padding-right:0;padding-left:16px;position:relative;margin-bottom:4px}
+  li:before{content:"▹";position:absolute;left:0;color:var(--em2);font-weight:700}
+  .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:6px}
+  .tag{font-size:11.5px;border:1px solid #cfe4da;background:#f3faf6;color:#1d5c43;border-radius:20px;padding:3px 11px}
+  .proj{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:12px}
+  .proj h3{font-size:14.5px;margin-bottom:4px}
+  .proj h3 a{color:var(--em);text-decoration:none}
+  .proj p{font-size:12.8px;color:var(--muted);margin:0}
+  .footer{text-align:center;font-size:11.5px;color:var(--muted);padding:0 0 26px}
+  @media print{
+    body{background:#fff;padding:0}
+    .page{box-shadow:none;border-radius:0;max-width:100%}
+    .hero{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .track i{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header class="hero">
+    <h1>Mohammad Atash</h1>
+    <div class="role">Full-Stack Developer · Frontend Focused · AI &amp; Intelligent Systems</div>
+    <div class="contact">
+      <a href="mailto:mohammadatash62@gmail.com">mohammadatash62@gmail.com</a>
+      <a href="https://www.linkedin.com/in/mohammed-atash-66a1b7414">linkedin.com/in/mohammed-atash</a>
+      <a href="https://github.com/MFCAtash">github.com/MFCAtash</a>
+      <span>Tehran, Iran</span>
+    </div>
+  </header>
+
+  <div class="body">
+
+    <section>
+      <h2>Profile</h2>
+      <p>Full-Stack Developer with a strong focus on Frontend Engineering, building modern, scalable and user-centered applications. Experienced across backend development, API design and database management, with a deep interest in AI, LLMs and intelligent automation.</p>
+    </section>
+
+    <section>
+      <h2>Core Skills</h2>
+      <div class="grid">
+        <div>
+          <div class="skill"><div class="top"><b>Frontend · React / TypeScript</b><span>92%</span></div><div class="track"><i style="width:92%"></i></div></div>
+          <div class="skill"><div class="top"><b>Backend · Node / Express / NestJS</b><span>85%</span></div><div class="track"><i style="width:85%"></i></div></div>
+          <div class="skill"><div class="top"><b>Databases · SQL &amp; NoSQL</b><span>82%</span></div><div class="track"><i style="width:82%"></i></div></div>
+        </div>
+        <div>
+          <div class="skill"><div class="top"><b>Python · Automation &amp; AI</b><span>72%</span></div><div class="track"><i style="width:72%"></i></div></div>
+          <div class="skill"><div class="top"><b>DevOps · Git / Docker / CI-CD</b><span>68%</span></div><div class="track"><i style="width:68%"></i></div></div>
+          <div class="skill"><div class="top"><b>C++ · Problem Solving</b><span>66%</span></div><div class="track"><i style="width:66%"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technologies</h2>
+      <div class="tags">
+        <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+        <span class="tag">TypeScript</span><span class="tag">React.js</span><span class="tag">Tailwind CSS</span>
+        <span class="tag">Bootstrap</span><span class="tag">Node.js</span><span class="tag">Express.js</span>
+        <span class="tag">NestJS</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span>
+        <span class="tag">MariaDB</span><span class="tag">SQL Server</span><span class="tag">MongoDB</span>
+        <span class="tag">Python</span><span class="tag">C++</span><span class="tag">Git &amp; GitHub</span>
+        <span class="tag">Docker</span><span class="tag">CI/CD</span><span class="tag">REST APIs</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selected Projects</h2>
+      <div class="proj">
+        <h3><a href="https://github.com/MFCAtash/royal-digital-clock">Royal Digital Clock</a></h3>
+        <p>Modern glassmorphism digital clock with animated particle background and Persian RTL interface. Live demo available.</p>
+      </div>
+      <div class="proj">
+        <h3><a href="https://github.com/MFCAtash/login-form">Login Form</a></h3>
+        <p>Responsive authentication form with clean UI, form validation and modern styling.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Interests</h2>
+      <ul>
+        <li>Artificial Intelligence, Machine Learning &amp; Deep Learning</li>
+        <li>Large Language Models, AI agents and intelligent automation</li>
+        <li>Software architecture and scalable application design</li>
+        <li>Open-source collaboration and technical writing</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <div class="footer">© 2026 Mohammad Atash — All Rights Reserved</div>
+</main>
+</body>
+</html>
